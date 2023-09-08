@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 58px;
+    font-weight: 700;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+h3{
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+}
+h4{
+    font-size: 28px;
+    font-weight: 700;
+}
+h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+h6{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+header {
+    background-image: url("imágenes/Fondo\ menu\ dorado.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: auto;
+}
+.menunav, .menunav2 {
+    height: 90px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    color:black;
+}
+
+.logtipo1, .logotipo2 {
+    height: 60%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.abrir-menu, .cerrar-menu, .logotipo2 {
+    display: none;
+}
+
+body {
+    background-image: url("imágenes/FONDO1.png");
+    background-size: 100%;
+}
+
+.logtipo img {
+    width: auto;
+    height: 100px;
+}
+
+
+
+.portada{
+    max-width: 0 ;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.p-texto {
+    background-color: none;
+    border: none;
+    padding: 10px; 
+ }
+
+ .p-imagen h1 {
+    background-color: #0137f4;
+    border: solid  black;
+    padding: 10px; 
+ }
+.p-texto h1 {
+    background-color: NONE;
+    border: none;
+    padding: 10px; 
+}
+.p-imagen h1 {
+    background-color: #0137f4;
+    border: solid black;
+    padding: 10px; 
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Alinear mi lista y el boton de forma horizontal*/
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+/*Quitar los puntos y alinear horizontal mis opciones*/
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/*Quitar subrayado, cambiar el color y tamaño del texto*/
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Ocultar el logotipo, el icono de abrir y cerrar*/
+.abrir-menu, .cerrar-menu, .logotipo2 {
+    display: none;
+}
+
+
+
+@media (max-width: 767px) {
+    
+    /*Estilo a mi Navegación*/
+    .container {
+        margin: 0 30px;
+        padding: 50px 0;
+    }
+
+    .menunav {
+        padding: 20px 0;
+    }
+
+    .menunav2 {
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+    /*Mostrar el logotipo, el icono de abrir y cerrar*/
+    .abrir-menu, .cerrar-menu, .logotipo2 {
+        display: block;
+        padding: 0;
+    }
+    
+    /*Cambiar el tamaño y el color de los iconos*/
+    .bi {
+        font-size: 2rem;
+        color: var(--colorBlanco);
+        
+    }
+
+    /*Ocultar menu*/
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--colorAzul);
+    }
+
+    /*Mostrar menu*/
+    .menu.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+
+    /*Cambiar la alineación de horizontal a vertical de lista y boton*/
+    .nav {
+        width: 100%;
+        padding: 50px 30px;
+        flex-direction: column;
+    }
+    
+    /*Cambiar la alineación de horizontal a vertical de las opciones*/
+    .nav-list {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+}
